@@ -12,6 +12,10 @@ print(float(number1))#->输出为12.0，整数型变成了浮点型，这就是f
 number2=12.2
 print(int(number2))#->输出为12，同理一个浮点型的数字变成了整数。
 print('王大锤'+str(2))#->输出为王大锤2，这是一个字符串，通过str函数将2转换成为整数型，然后对两个字符串进行了拼接。
+#practice:将用户输入的美元数量转换成人民币数量，假设人民币兑美元是7：1
+guest_dollars=input('Your dollars are : ')
+guest_RMB=int(guest_dollars)*7
+print(f'Your RMBs are:{guest_RMB} ')
 
 
 
