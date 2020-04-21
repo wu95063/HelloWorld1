@@ -11,6 +11,11 @@ name.upper()#（name（一个被定义为字符串的变量））将所有的字
 name.lower()#将所有的字符串变成小写，这里的lower即为一个method
 print(name.lower())#输出全部变成小写。（可以理解为：输出'使用了方法的name变量'）
 print(name.upper())#输出全部变成大写。
+name.find('P')#-->0
+name.find('O')#--->-1
+name.repalce('P','T')#-->
+#iin 操作符
+print('PytHon' in name )#-->True.
 
 
 
