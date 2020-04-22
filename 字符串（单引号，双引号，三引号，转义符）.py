@@ -29,4 +29,3 @@ another=name[:]#定义一个变量。
 print(another)#->python
 
 
-
