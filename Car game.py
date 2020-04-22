@@ -23,7 +23,3 @@ else:#while 循环结束
 
 
 
-
-
-#这是一个需要被循环的输出项，所以放在while里面。
- #Input_some=input('> ')
