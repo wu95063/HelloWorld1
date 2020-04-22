@@ -24,16 +24,22 @@ while Guess!=Right_Number:
 else:
     print('you win !')
 ##上面这个程序，没有设定三次的猜测次数限制，现在让我们来更改这个程序。
-Guess_count=1
+Guess_count=0
 Guess_number=int(input('猜猜我心里的数字是多少： '))
 number=9
-while Guess_count<=3:
+while Guess_count<3:
     Guess_count+=1
-    if Guess_number!=number:
-        Guess_number=int(input('再猜一猜: '))
-    else:
+    if Guess_number==number:
         print('你赢了！')
-print('在玩一把？')
+        break#想要终止while循环，使用break终止。
+    else:
+        Guess_number = int(input('再猜一猜: '))
+else:
+    print('猜错喽，再玩一把？ ')#这里的代码会在while循环语句中被执行。
+    #理解：如果玩家猜对了数字，你打破这个循环，你跳出他的代码，所以我们在else块中写入的代码不会被执行，
+    #但是玩家如果用户不能猜测出这个数字，你就永远不会跳出来。
+    #所以这个循环将被执行到完成，知道condition变成false,到这个时候else块中的代码将被执行。
+
 
 
 
